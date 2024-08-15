@@ -56,4 +56,15 @@ return {
     "NoahTheDuke/vim-just",
     ft = { "just" },
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      setup = {
+        -- Mason already sets up rust-analyzer
+        rust_analyzer = function()
+          return true
+        end,
+      },
+    },
+  },
 }

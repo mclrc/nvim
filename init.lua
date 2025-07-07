@@ -23,6 +23,8 @@ require("config.lazy")
   end,
 })]]
 
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
 require("lspconfig").jdtls.setup({
   settings = {
     flags = {

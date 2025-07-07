@@ -95,6 +95,7 @@ return {
       servers = {
         -- tsserver will be automatically installed with mason and loaded with lspconfig
         tsserver = {},
+        clangd = {},
       },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
@@ -106,7 +107,7 @@ return {
           return true
         end,
         -- Specify * to use this function as a fallback for any server
-        -- ["*"] = function(server, opts) end,
+        ["*"] = function(server, opts) end,
       },
     },
   },
@@ -242,4 +243,5 @@ return {
       })
     end,
   },
+  { "https://github.com/ggandor/leap.nvim" },
 }
